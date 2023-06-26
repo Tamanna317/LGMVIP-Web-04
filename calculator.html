@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <h4 style="text-align:center;font-size:30px;color:red";>Calculator</h4>
+    <style>
+     input[type=button],input[type=submit], input[type=reset] {
+  background-color: white;
+  border-radius:30%;
+  color: black;
+  padding: 24px 32px;
+  text-decoration: none;
+  margin: 8px 4px;
+  cursor: pointer;
+  font-size:25px;
+}
+input[type=text]{
+  background-color:powder;
+  border-radius:15%;
+  padding: 24px 32px;
+  text-decoration: none;
+  margin: 8px 4px;
+  cursor: pointer;
+  font-size:25px;
+}
+
+    </style>
+</head>
+<body>
+    <table border="3" style="background-color:grey" height="15" width="20">
+        <form name="calculator">
+            <tr >
+                <td colspan="4" style="background-color:powder"><input type="text" id="answer" name="ans"> Casio ef551s</td>
+            </tr>
+            <tr >
+                <td><input type="button" value="7" size="10" onclick="calculator.ans.value+=7"></td>
+                <td><input type="button" value="8" onclick="calculator.ans.value+=8"></td>
+                <td><input type="button" value="9" onclick="calculator.ans.value+=9"></td>
+                <td style="background-color:"><input type="button" value="+" onclick="calculator.ans.value+='+'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="calculator.ans.value+=4"></td>
+                <td><input type="button" value="5" onclick="calculator.ans.value+=5"></td>
+                <td><input type="button" value="6" onclick="calculator.ans.value+=6"></td>
+                <td><input type="button" value="-" onclick="calculator.ans.value+='-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="calculator.ans.value+=1"></td>
+                <td><input type="button" value="2" onclick="calculator.ans.value+=2"></td>
+                <td><input type="button" value="3" onclick="calculator.ans.value+=3"></td>
+                <td><input type="button" value="*" onclick="calculator.ans.value+='*'"></td>
+            </tr>
+            <tr>
+        <td><input type="reset" style="background-color:#f0f8ff" value="C"></td>
+                <td><input type="button" value="0" onclick="calculator.ans.value+=0"></td>
+                <td><input type="button" value="=" onclick="calculator.ans.value=eval(calculator.ans.value)"></td>
+         <td><input type="button" value="/" onclick="calculator.ans.value+='/'"></td>
+            </tr>
+        </table>
+</body>
+</html>
